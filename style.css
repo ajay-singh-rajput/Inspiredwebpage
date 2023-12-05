@@ -1,0 +1,283 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2vmax;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    font-family: 'Ubuntu', sans-serif;
+    z-index: 99;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.n-ul1{
+    font-size: 1.4vmax;
+    gap: 0.5vmax;
+    color: white;
+}
+.n-ul2{
+    width: 50%;
+    font-size: 1.4vmax;
+    justify-content: space-between;
+    color: #728454;
+    font-weight: 400;
+    padding-left: 1vmax;
+}
+.home{
+    color: #36492D;
+    /* padding-bottom: 1vmax; */
+    text-decoration: underline;
+    font-weight: 500;
+}
+.n-ul2 > li:hover{
+    color: #36492D;
+    /* padding-bottom: 1vmax; */
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+
+/* ________ nav end ________ */
+/* ________ main start ________ */
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    /* overflow: hidden; */
+    top: 0;
+}
+
+.m-left{
+    width: 50%;
+    height: 100%;
+    background: url(https://images.unsplash.com/photo-1535242208474-9a2793260ca8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.m-right{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(210, 210, 210);
+    overflow: hidden;
+    position: relative;
+}
+.r-up{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: end;
+    position: relative;
+}
+
+.r-h1{
+    font-size: 20vmax;
+    color: transparent;
+    background: url(https://images.unsplash.com/photo-1535242208474-9a2793260ca8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80);
+    background-size: 150%;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-family: 'Roboto', sans-serif;
+    /* text-shadow: 0 0 2px grey; */
+    z-index: 2;
+}
+.r-h1c{
+    font-size: 20vmax;
+    color: transparent;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    /* background-color: red; */
+    text-shadow: 0 0 15px black;
+    z-index: 1;
+}
+
+.l-h1{
+    font-size: 20vmax;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(210, 210, 210);
+    text-shadow: 0 0 10px black;
+}
+.l-up{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.r-do{
+    width: 100%;
+    height: 30%;
+    font-size: 20vmax;
+    text-align: center;
+    /* transform: translateY(-50%); */
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    /* background-color: #36492D; */
+    bottom: 0;
+    overflow: hidden;
+}
+
+.zero, .one{
+    color: white;
+    text-shadow: -5px 0 7px black;
+    transform: translateY(55%);
+    /* clip-path: polygon(0 1%, 100% 0, 100% 49%, 0 48%); */
+
+}
+.zeroc{
+    color: transparent;
+    background: url(https://images.unsplash.com/photo-1535242208474-9a2793260ca8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80);
+    background-size: 150%;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    position: absolute;
+    transform: translateY(55%);
+
+    /* clip-path: polygon(0 1%, 100% 0, 100% 49%, 0 48%); */
+
+}
+
+.fh{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 15vmax;
+    top: 5%;
+    line-height: 12vmax;
+    /* background-color: red; */
+    /* font-family: 'Roboto', sans-serif; */
+    display: none;
+    text-transform: uppercase;
+}
+.f-h1{
+    color: rgb(210, 210, 210);
+    text-shadow: 0 0 10px black;
+    right: 0%;
+    transform: translateX(50%);
+    clip-path: polygon(0 1%, 50% 0, 50% 100%, 0 100%);
+
+}
+.f-h2{
+    /* color: red; */
+    /* text-shadow: 0 0 10px black; */
+    /* right: 50%; */
+    transform: translateX(-50%);
+    color: transparent;
+    background: url(https://images.unsplash.com/photo-1535242208474-9a2793260ca8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80);
+    background-size: 150%;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.l-do{
+    width: 100%;
+    height: 30%;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 10%;
+    
+    /* background-color: aqua; */
+}
+
+.s-h1{
+    font-size: 1.2vmax;
+}
+.s-h2{
+    font-size: 5vmax;
+}
+.s-p1{
+    width: 80%;
+    text-transform: none;
+    font-size: 1vmax;
+    color: rgb(210, 210, 210);
+}
+.s-a1{
+    text-decoration: none;
+    color: white;
+    font-size: 1vmax;
+}
+
+
+.leaf, .leafc{
+    display: none;
+}
+
+
+@media (max-width: 600px) {
+
+    .fh{
+        display: initial;
+    }
+
+    .lh{
+        display: none;
+    }
+    .r-do{
+        font-size: 5vmax;
+    }
+    .n-ul2 > li{
+        display: none;
+    }
+    .n-ul2{
+        justify-content: end;
+        color: #36492D;
+    }
+    .leaf{
+        font-size: 20vmax;
+        display: initial;
+    text-shadow: 0 0 10px black;
+
+        /* color: aqua; */
+    }
+    .leafc{
+        font-size: 20vmax;
+        display: initial;
+        color: aqua; 
+        color: transparent;
+    background: url(https://images.unsplash.com/photo-1535242208474-9a2793260ca8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80);
+    background-size: 300%;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    position: absolute;
+}
+.r-up{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+    }
+
